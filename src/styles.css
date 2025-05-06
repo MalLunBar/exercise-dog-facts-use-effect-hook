@@ -1,1 +1,39 @@
-/* Start Adding your CSS here */
+/* Start Adding your CSS here */*
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+.loading {
+  font-size: 1.2rem;
+  color: #555;
+  animation: wag 1s infinite;
+}
+
+@keyframes wag {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.refresh-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffda87;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.refresh-btn:hover {
+  background-color: #ffd266;
+}
